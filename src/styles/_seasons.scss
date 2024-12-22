@@ -35,6 +35,15 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 16px;
 
+            @media (max-width:768px) {
+                grid-template-columns: 1fr;
+            }
+
+            @media (min-width:769px) and (max-width:1024px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
             &__item{
                 img{
                     width: 100%;

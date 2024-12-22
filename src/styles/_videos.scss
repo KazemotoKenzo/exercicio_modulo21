@@ -3,18 +3,6 @@
 .videos{
     padding: 25px 5vw;
 
-    &__title{
-        display: flex;
-        align-items:baseline;
-        padding-top: 25px;
-
-        span{
-            margin-left: 8px;
-            padding-left: 16px;
-            border-left: 1px solid var.$secundary;
-        }
-    }
-
     &__carousel{
         position: relative;
         margin: 16px 0;

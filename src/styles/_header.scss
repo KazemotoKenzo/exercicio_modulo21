@@ -10,6 +10,22 @@
     background-color: black;
     align-items: center;
 
+    .maior{
+        display: block;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+
+    .menor{
+        display: none;
+
+        @media (max-width:768px) {
+            display: block;
+        }
+    }
+
     img{
         max-height: 40px;
     }
@@ -20,6 +36,12 @@
 
         li{
             margin-left: 8px;
+
+            .seriesfilmes{
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
 
             .btn--entrar{
                 background-color: transparent;
