@@ -1,0 +1,30 @@
+@use 'var';
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 16px 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+
+    img{
+        max-height: 40px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+
+        li{
+            margin-left: 8px;
+
+            .btn--entrar{
+                background-color: transparent;
+                border: 1px solid var.$secundary;
+            }
+        }
+    }
+}
