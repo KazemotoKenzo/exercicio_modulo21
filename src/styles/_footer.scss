@@ -1,0 +1,20 @@
+@use 'var';
+
+.footer{
+    padding: 25px 5vw;
+
+    &__list{
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+
+    select{
+        background-color: #000000;
+        color: var.$secundary;
+        margin: 24px 0;
+        font-size: 20px;
+        padding: 8px;
+    }
+}
