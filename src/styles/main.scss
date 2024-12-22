@@ -1,0 +1,59 @@
+@use 'var';
+@use 'hero';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-weight: 600;
+}
+
+body {
+    background-color: var.$background;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    color: var.$primary;
+}
+
+@mixin title($fontSize:30px){
+    font-size: $fontSize;
+    color: var.$primary;
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(14px);
+}
+
+.title{
+    @include title;
+}
+
+.title--small{
+    @include title(24px);
+}
+
+.secundary{
+    color: var.$secundary;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius:5px;
+    border: none;
+    padding: 12px 24px;
+    color: var.$primary;
+    background-color: #e50914;
+
+    &:hover {
+        background-color: lighten(#e50914,10%);
+    }
+    
+}
